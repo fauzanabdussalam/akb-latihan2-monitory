@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context=".Biodata">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen26"
+        android:layout_marginRight="@dimen/dimen26">
+
+        <TextView
+            android:id="@+id/txt_nama"
+            style="@style/TextGunmetalNunitoBold24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen80"
+            android:text="@string/biodata_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_nama"
+            style="@style/EdtWhiteFour15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/biodata_hint_name_holder"
+            android:inputType="textCapWords"
+            android:maxLength="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nama" />
+
+        <TextView
+            android:id="@+id/txt_umur"
+            style="@style/TextGunmetalNunitoBold24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen34"
+            android:text="@string/biodata_age"
+            app:layout_constraintStart_toStartOf="@+id/edt_umur"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nama" />
+
+        <EditText
+            android:id="@+id/edt_umur"
+            style="@style/EdtWhiteFour15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/biodata_age_holder"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_umur" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            style="@style/ButtonYellowRounded18RubikMedium14Black"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen36"
+            android:layout_marginBottom="@dimen/dimen34"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

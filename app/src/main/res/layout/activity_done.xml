@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/dimen26"
+    android:layout_marginRight="@dimen/dimen26"
+    tools:context=".Done">
+
+    <TextView
+        android:id="@+id/txt_done"
+        style="@style/TextGunmetalNunitoBold24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activation_beres"
+        android:paddingTop="@dimen/dimen50"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_done"
+        style="@style/ButtonYellowRounded18RubikMedium14Black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen36"
+        android:text="@string/activation_oke"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/dimen34"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
